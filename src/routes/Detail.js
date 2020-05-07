@@ -85,7 +85,7 @@ class Detail extends React.Component {
         ) : this.state.error.code === 200 ? (
           <>
             {bot.state === "private" ? (
-              <Message>
+              <Message inverted>
                 해당 봇은 특수목적 봇이므로 초대하실 수 없습니다.
               </Message>
             ) : bot.state === "archived" ? (
